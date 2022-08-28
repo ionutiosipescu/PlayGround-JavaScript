@@ -1,14 +1,13 @@
 // function sameCase(a, b){
-    // if(a.toUpperCase() === a.toLowerCase() || b.toLowerCase() === b.toUpperCase()){
-    //    return -1
-    //  }else if(a === a.toLowerCase() && b === b.toLowerCase() || a === a.toUpperCase() && b === b.toUpperCase()){
-    //      return 1
-    //  }else{
-    //    return 0
-    //  }
-    // console.log(`this is a big ${a.toUpperCase()} and this is small ${a.toLowerCase()}`)
+// if(a.toUpperCase() === a.toLowerCase() || b.toLowerCase() === b.toUpperCase()){
+//    return -1
+//  }else if(a === a.toLowerCase() && b === b.toLowerCase() || a === a.toUpperCase() && b === b.toUpperCase()){
+//      return 1
+//  }else{
+//    return 0
+//  }
+// console.log(`this is a big ${a.toUpperCase()} and this is small ${a.toLowerCase()}`)
 //    }
-
 
 //    console.log(sameCase('C', 'B'));
 //    doTest('b', 'a', 1);
@@ -18,7 +17,6 @@
 //    doTest('b', 'Z', 0);
 //    doTest('\t', 'Z', -1);
 //    doTest('H', ':', -1);
-
 
 // const flip=(x, r)=>{
 // if(x === "R"){
@@ -30,9 +28,7 @@
 // }
 //   }
 
-
 // console.log(flip('L', [3, 2, 1, 2]))
-
 
 // function warnTheSheep(queue) {
 // for(let i = queue.length - 1 ; i >= 0  ; i--){
@@ -51,3 +47,30 @@
 // warnTheSheep(["sheep", "wolf", "sheep"]);
 // warnTheSheep(["wolf"]);
 // warnTheSheep(["sheep", "sheep", "wolf"]);
+
+// let countSheep = function (num) {
+//   let newArr = [];
+//   for (let i = 0; i < num; i++) {
+//     newArr.push(`${i + 1} sheep...`);
+//   }
+//   return newArr.join("");
+// };
+
+// console.log(countSheep(3));
+
+// function abbrevName(name) {
+//   let newArr = name
+//     .split(" ")
+//     .map((element) => element.charAt(0).toUpperCase().concat("."));
+
+//   return newArr[0].concat(".", newArr[1]);
+// }
+
+// console.log(abbrevName("Sam Harris"));
+
+// function pillars(numPill, dist, width) {
+//   let result = (numPill - 1) * dist * 100 + (numPill - 2) * width;
+//   return result;
+// }
+
+// console.log(pillars(2, 20, 25));
