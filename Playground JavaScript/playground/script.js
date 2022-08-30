@@ -29,19 +29,8 @@
 //     }
 //   }
 // }
-function twoSort(s) {
-  // let add = "***";
-  // let arr = [];
-  let result = s
-    .map((element) => element.split(""))
-    .map((element) => element.join("***"));
-  // for (let i = 0; i < s.length; i++) {
-  //   let newArr = s[i].split("");
-  //   let complete = newArr.join(add);
-  //   arr.push(complete);
-  // }
-  console.log(result);
-  return result;
-}
+// function twoSort(s) {
+//   return s.sort()[0].split("").join("***");
+// }
 
-twoSort(["bitcoin", "altceva", "ceva"]);
+// console.log(twoSort(["bitcoin", "altceva", "ceva"]));
