@@ -18,3 +18,14 @@
 
 // console.log(longestWords(`I woke up early today`));
 // console.log(longestWords(`I went straight to the beach`));
+
+// let daysArray = ["1", "2", "3", "4", "5", "12"];
+// let courseHwork = ["4", "8", "15", "16", "23", "42", "12"];
+
+// for (let i = 0; i < courseHwork.length; i++) {
+//   for (let j = 0; j < daysArray.length; j++) {
+//     if (courseHwork[i] == daysArray[j]) {
+//       console.log(`i find you ${courseHwork[i]} --> ${daysArray[j]}`);
+//     }
+//   }
+// }
