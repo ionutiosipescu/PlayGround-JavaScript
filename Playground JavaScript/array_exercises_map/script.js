@@ -260,36 +260,36 @@
 // c) Get an array of objects with just name and height properties
 // d) Get an array of all first names
 
-const characters = [
-  {
-      name: 'Luke Skywalker',
-      height: '172',
-      mass: '77',
-      eye_color: 'blue',
-      gender: 'male',
-  },
-  {
-      name: 'Darth Vader',
-      height: '202',
-      mass: '136',
-      eye_color: 'yellow',
-      gender: 'male',
-  },
-  {
-      name: 'Leia Organa',
-      height: '150',
-      mass: '49',
-      eye_color: 'brown',
-      gender: 'female',
-  },
-  {
-      name: 'Anakin Skywalker',
-      height: '188',
-      mass: '84',
-      eye_color: 'blue',
-      gender: 'male',
-  },
-];
+// const characters = [
+//   {
+//       name: 'Luke Skywalker',
+//       height: '172',
+//       mass: '77',
+//       eye_color: 'blue',
+//       gender: 'male',
+//   },
+//   {
+//       name: 'Darth Vader',
+//       height: '202',
+//       mass: '136',
+//       eye_color: 'yellow',
+//       gender: 'male',
+//   },
+//   {
+//       name: 'Leia Organa',
+//       height: '150',
+//       mass: '49',
+//       eye_color: 'brown',
+//       gender: 'female',
+//   },
+//   {
+//       name: 'Anakin Skywalker',
+//       height: '188',
+//       mass: '84',
+//       eye_color: 'blue',
+//       gender: 'male',
+//   },
+// ];
 
 
 // a)
@@ -305,14 +305,14 @@ const characters = [
 
 // c)
 
-function getObjects(arr){
-  let result = arr.map((element) => {
-    let completeArr = element.name.concat(element.height)
-    return completeArr
-  })
-  return result
-}
+// function getObjects(arr){
+//   let result = arr.map((element) => {
+//     let completeArr = element.name.concat(element.height)
+//     return completeArr
+//   })
+//   return result
+// }
 
 
 
-console.log(getObjects(characters))
+// console.log(getObjects(characters))
