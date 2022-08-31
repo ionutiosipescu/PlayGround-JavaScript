@@ -61,14 +61,62 @@
 
 // console.log(arr(4))
 
-function solution(number){
-   let sum = 0
-  for(let i = 1 ; i < number ; i++){
-   if(i % 3 === 0 || i % 5 === 0){
-      sum += i
-   }
-  }
-  return sum
-}
+// function solution(number){
+//    let sum = 0
+//   for(let i = 1 ; i < number ; i++){
+//    if(i % 3 === 0 || i % 5 === 0){
+//       sum += i
+//    }
+//   }
+//   return sum
+// }
 
-console.log(solution(10))
+// console.log(solution(10))
+
+
+// function reverseWords(str){
+//    return str.split(" ").reverse().join(' ')
+//  }
+
+
+//  console.log(reverseWords("hello world!"))
+
+// function removeExclamationMarks(s) {
+//    // .map((element) => element.replace("!", '')).join(" ")
+//    return s.split("").map((element) => element.replace("!", '')).join("")
+
+// }
+
+
+//  console.log(removeExclamationMarks("Hello World!!"))
+
+
+// function countBy(x, n) {
+//    let z = [];
+//    for(let i = 1; i <= x * n ; i++) {
+//       if(i % x === 0){
+//          z.push(i)
+//       }
+//    }
+//    return z;
+//  }
+
+
+//  console.log(countBy(2,5))
+
+
+// function remove(string) {
+//    let newArr = string.split(" ")
+//    let lastChart = newArr[newArr.length - 1].slice(0, -1)
+//    let result = lastChart[0] + lastChart
+//    console.log(result)
+   // return string.split("").map((element) => element.replace("!", '')).join("")
+   // return string.slice(0, -1)
+      // let result = string[string.length - 1].replace("!", '')
+      // let test = string.split("").pop()
+      // return arguments[Object.keys(arguments).pop()].slice(0, -1)
+   //   console.log(string[string.length - 1])
+   //   console.log(test2)
+   // }
+
+   // console.log(remove("hi!!! hi!"))
