@@ -19,7 +19,6 @@
 // console.log(longestWords(`I woke up early today`));
 // console.log(longestWords(`I went straight to the beach`));
 
-
 // const people = [
 //     { name: "Rohan", age: 18 },
 //     { name: "Mohan", age: 20 },
@@ -36,7 +35,7 @@
 //  };
 
 //  let a = groupBy(people, "age");
- 
+
 //  console.log(a)
 // let daysArray = ["1", "2", "3", "4", "5", "12"];
 // let courseHwork = ["4", "8", "15", "16", "23", "42", "12"];
@@ -56,7 +55,6 @@
 
 // let ceva = Array.apply(null, {length: 100}).map((value, index) => index + 1);
 
-
 // const arr = n => Array.from({length: n}, (_, i) => i);
 
 // console.log(arr(4))
@@ -73,11 +71,9 @@
 
 // console.log(solution(10))
 
-
 // function reverseWords(str){
 //    return str.split(" ").reverse().join(' ')
 //  }
-
 
 //  console.log(reverseWords("hello world!"))
 
@@ -87,9 +83,7 @@
 
 // }
 
-
 //  console.log(removeExclamationMarks("Hello World!!"))
-
 
 // function countBy(x, n) {
 //    let z = [];
@@ -101,22 +95,75 @@
 //    return z;
 //  }
 
-
 //  console.log(countBy(2,5))
-
 
 // function remove(string) {
 //    let newArr = string.split(" ")
 //    let lastChart = newArr[newArr.length - 1].slice(0, -1)
 //    let result = lastChart[0] + lastChart
 //    console.log(result)
-   // return string.split("").map((element) => element.replace("!", '')).join("")
-   // return string.slice(0, -1)
-      // let result = string[string.length - 1].replace("!", '')
-      // let test = string.split("").pop()
-      // return arguments[Object.keys(arguments).pop()].slice(0, -1)
-   //   console.log(string[string.length - 1])
-   //   console.log(test2)
-   // }
+// return string.split("").map((element) => element.replace("!", '')).join("")
+// return string.slice(0, -1)
+// let result = string[string.length - 1].replace("!", '')
+// let test = string.split("").pop()
+// return arguments[Object.keys(arguments).pop()].slice(0, -1)
+//   console.log(string[string.length - 1])
+//   console.log(test2)
+// }
 
-   // console.log(remove("hi!!! hi!"))
+// console.log(remove("hi!!! hi!"))
+
+// function typeValidation(variable, type) {
+//   if (typeof variable === type) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// function typeValidation(variable, type) {
+//   return typeof variable === type;
+// }
+
+// console.log(typeValidation(42, "number"));
+// // true
+// console.log(typeValidation("42", "number"));
+// // false
+
+// function grow(x) {
+//   let result = x.reduce((curr, element) => {
+//     console.log(curr);
+//     return curr * element;
+//   });
+//   console.log(result);
+//   return result;
+// }
+
+// grow([2, 2, 2, 2, 2, 2]);
+
+function SubtractSum(n) {
+  //   return n
+  //     .toString()
+  //     .split("")
+  //     .reduce((a, b) => parseInt(a) + parseInt(b));
+  let arr = n
+    .toString()
+    .split("")
+    .map((element) => parseInt(element));
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  //   console.log(arr);
+  console.log(sum);
+}
+
+SubtractSum(10);
+// "apple"
+
+// n = 325
+// sum = 3+2+5 = 10
+// n = 325-10 = 315 (not in the list)
+// sum = 3+1+5 = 9
+// n = 315-9 = 306 (not in the list)
+// sum = 3+0+6 = 9
+// n =306-9 = 297 (not in the list)
