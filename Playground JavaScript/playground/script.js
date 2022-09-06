@@ -167,3 +167,49 @@
 // n = 315-9 = 306 (not in the list)
 // sum = 3+0+6 = 9
 // n =306-9 = 297 (not in the list)
+
+//  nu a functionat de refacut
+
+// function rowSumOddNumbers(n) {
+//   let arr = [];
+//   let sum = 0;
+//   for (let i = arr.length; i < n * 2; i++) {
+//     if (i % 2 === 1) {
+//       arr.push(i);
+//     }
+//     // console.log(i);
+//   }
+//   for (let j = 0; j < arr.length; j++) {
+//     sum += arr[j] + (n + n);
+//     console.log(j);
+//   }
+//   console.log(arr);
+//   return sum;
+// }
+
+// // rowSumOddNumbers(2)
+// console.log(rowSumOddNumbers(2));
+
+//  Prima Varianta
+// function alternate(n, firstValue, secondValue) {
+//   let arr = [];
+//   for (let i = arr.length; i < n; i++) {
+//     arr.push(i % 2 === 0 ? firstValue : secondValue);
+//   }
+//   return arr;
+// }
+
+// alternate(5, true, false);
+
+//  Cea mai scurta varianta
+// function alternate(n, firstValue, secondValue) {
+//   return Array.from({ length: n }, (_, i) =>
+//     i % 2 === 0 ? firstValue : secondValue
+//   );
+// }
+// console.log(alternate(5, true, false));
+
+// function ceva(n) {
+//   return Array.from({ length: n }, (_, i) => console.log(i + 1));
+// }
+// ceva(10);
