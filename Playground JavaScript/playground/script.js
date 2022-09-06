@@ -213,3 +213,46 @@
 //   return Array.from({ length: n }, (_, i) => console.log(i + 1));
 // }
 // ceva(10);
+
+// function barista(coffees) {
+//   return coffees.reduce((curr, el) => {
+//     return curr + el * 2 + 2;
+//   }, 0);
+// }
+
+// let first = true;
+
+// function barista(coffees) {
+//   let sum = 0;
+//   for (let prop of coffees) {
+//     if (coffees.hasOwnProperty(prop)) {
+//       if (first) {
+//         first = false;
+//         sum += prop + 2;
+//       }
+//       sum += prop * 2 + 2;
+//     }
+//   }
+//   return sum;
+// }
+
+let first = true;
+function barista(coffees) {
+  let sum = 0;
+  for (let i = 0; i < coffees.length; i++) {
+    if (first) {
+      first = false;
+      sum += coffees[i] + 2;
+    } else {
+      sum += coffees[i] * 2 + 2;
+    }
+  }
+  return sum;
+}
+
+console.log(barista([4, 3, 2]));
+
+// 4 + 2 = 6
+// 6 + 3 = 9
+// 9 + 2 = 11
+// 11+ 2 = 13
