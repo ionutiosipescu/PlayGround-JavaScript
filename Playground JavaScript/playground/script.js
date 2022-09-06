@@ -254,7 +254,7 @@
 
 // console.log(barista([2,10,5,3,9]));
 
-// 4 
+// 4
 // 4 + 2 + 3 = 9
 // 9 + 2 + 2 = 13
 
@@ -266,3 +266,48 @@
 
 // 2 + 7 + 13 = 22
 
+function i(word) {
+  let vocale = ["a", "e", "i", "o", "u"];
+  let iWord = "I";
+  let arr = word.split("");
+  let arrVocale = [];
+
+  // for (let i = 0; i < arr.length; i++) {
+  //   for (let j = 0; j < vocale.length; j++) {
+  //     if (arr[i].toLowerCase() === vocale[j]) {
+  //       arrVocale.push(arr[i].toLowerCase());
+  //     }
+  //   }
+  // }
+
+  // return arr[0] === iWord ||
+  //   arr[0] === arr[0].toLowerCase() ||
+  //   arrVocale.length * 2 === arr.length
+  //   ? console.log("Invalid word !❌")
+  //   : finalword;
+
+  // if (
+  //   arr[0] === iWord ||
+  //   arr[0] === arr[0].toLowerCase() ||
+  //   arrVocale.length * 2 === arr.length
+  // ) {
+  //   return `shit`;
+  // } else {
+  //   return "ceva";
+  // }
+}
+
+//
+// i("Phone");
+// i("World");
+// i("Inspire");
+i("East");
+// i("road");
+
+// no number equal of vocale si consoane like : east
+// no string with lowercase
+// no string with I start
+
+// console.log("ceva");
+
+// maybe use While loop or find other solution then 2 for !
