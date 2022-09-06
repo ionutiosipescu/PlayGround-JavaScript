@@ -236,23 +236,33 @@
 //   return sum;
 // }
 
-let first = true;
-function barista(coffees) {
-  let sum = 0;
-  for (let i = 0; i < coffees.length; i++) {
-    if (first) {
-      first = false;
-      sum += coffees[i] + 2;
-    } else {
-      sum += coffees[i] * 2 + 2;
-    }
-  }
-  return sum;
-}
+// function barista(coffees) {
+//   let first = true;
+//   let coffeesSorted = coffees.sort()
+//   let sum = 0;
+//   for (let i = 0; i < coffeesSorted.length; i++) {
+//     let coffe = coffeesSorted[i]
+//     if (first) {
+//       first = false;
+//       sum += coffe + 2;
+//     } else {
+//       sum += coffe * 2  + 2;
+//     }
+//   }
+//   return sum;
+// }
 
-console.log(barista([4, 3, 2]));
+// console.log(barista([2,10,5,3,9]));
 
-// 4 + 2 = 6
-// 6 + 3 = 9
-// 9 + 2 = 11
-// 11+ 2 = 13
+// 4 
+// 4 + 2 + 3 = 9
+// 9 + 2 + 2 = 13
+
+// final 4 + 9 + 13 = 26
+
+// 2
+// 2 + 2 + 3 = 7
+// 7 + 2 + 4 = 13
+
+// 2 + 7 + 13 = 22
+
