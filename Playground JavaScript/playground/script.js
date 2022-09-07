@@ -271,23 +271,23 @@ function i(word) {
   let iWord = "i";
   let arr = word.split("");
   let arrVocale = [];
-  let finalword = iWord.concat(word)
-  
+  let finalword = iWord.concat(word);
+
   for (let i = 0; i < arr.length; i++) {
-      for (let j = 0; j < vocale.length; j++) {
-          if (arr[i].toLowerCase() === vocale[j]) {
-              arrVocale.push(arr[i].toLowerCase());
-            }
-        }
+    for (let j = 0; j < vocale.length; j++) {
+      if (arr[i].toLowerCase() === vocale[j]) {
+        arrVocale.push(arr[i].toLowerCase());
+      }
     }
-    
-    console.log(arrVocale)
+  }
+
+  console.log(arrVocale);
 
   if (
     arr[0] === iWord.toUpperCase() ||
-    typeof(arr[0]) === "undefined" ||
+    typeof arr[0] === "undefined" ||
     arr[0] === arr[0].toLowerCase() ||
-    arrVocale.length * 2 >= arr.length 
+    arrVocale.length * 2 >= arr.length
   ) {
     return "Invalid word !❌";
   } else {
