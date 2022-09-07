@@ -268,41 +268,40 @@
 
 function i(word) {
   let vocale = ["a", "e", "i", "o", "u"];
-  let iWord = "I";
+  let iWord = "i";
   let arr = word.split("");
   let arrVocale = [];
+  let finalword = iWord.concat(word)
+  
+  for (let i = 0; i < arr.length; i++) {
+      for (let j = 0; j < vocale.length; j++) {
+          if (arr[i].toLowerCase() === vocale[j]) {
+              arrVocale.push(arr[i].toLowerCase());
+            }
+        }
+    }
+    
+    console.log(arrVocale)
 
-  // for (let i = 0; i < arr.length; i++) {
-  //   for (let j = 0; j < vocale.length; j++) {
-  //     if (arr[i].toLowerCase() === vocale[j]) {
-  //       arrVocale.push(arr[i].toLowerCase());
-  //     }
-  //   }
-  // }
-
-  // return arr[0] === iWord ||
-  //   arr[0] === arr[0].toLowerCase() ||
-  //   arrVocale.length * 2 === arr.length
-  //   ? console.log("Invalid word !❌")
-  //   : finalword;
-
-  // if (
-  //   arr[0] === iWord ||
-  //   arr[0] === arr[0].toLowerCase() ||
-  //   arrVocale.length * 2 === arr.length
-  // ) {
-  //   return `shit`;
-  // } else {
-  //   return "ceva";
-  // }
+  if (
+    arr[0] === iWord.toUpperCase() ||
+    typeof(arr[0]) === "undefined" ||
+    arr[0] === arr[0].toLowerCase() ||
+    arrVocale.length * 2 >= arr.length 
+  ) {
+    return "Invalid word !❌";
+  } else {
+    return finalword;
+  }
 }
 
 //
-// i("Phone");
+// console.log(i("Phone"));
 // i("World");
 // i("Inspire");
-i("East");
+// i("East");
 // i("road");
+console.log(i("Peace"));
 
 // no number equal of vocale si consoane like : east
 // no string with lowercase
