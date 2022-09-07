@@ -266,34 +266,34 @@
 
 // 2 + 7 + 13 = 22
 
-function i(word) {
-  let vocale = ["a", "e", "i", "o", "u"];
-  let iWord = "i";
-  let arr = word.split("");
-  let arrVocale = [];
-  let finalword = iWord.concat(word);
+// function i(word) {
+//   let vocale = ["a", "e", "i", "o", "u"];
+//   let iWord = "i";
+//   let arr = word.split("");
+//   let arrVocale = [];
+//   let finalword = iWord.concat(word);
 
-  for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < vocale.length; j++) {
-      if (arr[i].toLowerCase() === vocale[j]) {
-        arrVocale.push(arr[i].toLowerCase());
-      }
-    }
-  }
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < vocale.length; j++) {
+//       if (arr[i].toLowerCase() === vocale[j]) {
+//         arrVocale.push(arr[i].toLowerCase());
+//       }
+//     }
+//   }
 
-  console.log(arrVocale);
+//   console.log(arrVocale);
 
-  if (
-    arr[0] === iWord.toUpperCase() ||
-    typeof arr[0] === "undefined" ||
-    arr[0] === arr[0].toLowerCase() ||
-    arrVocale.length * 2 >= arr.length
-  ) {
-    return "Invalid word !❌";
-  } else {
-    return finalword;
-  }
-}
+//   if (
+//     arr[0] === iWord.toUpperCase() ||
+//     typeof arr[0] === "undefined" ||
+//     arr[0] === arr[0].toLowerCase() ||
+//     arrVocale.length * 2 >= arr.length
+//   ) {
+//     return "Invalid word !❌";
+//   } else {
+//     return finalword;
+//   }
+// }
 
 //
 // console.log(i("Phone"));
@@ -301,7 +301,7 @@ function i(word) {
 // i("Inspire");
 // i("East");
 // i("road");
-console.log(i("Peace"));
+// console.log(i("Peace"));
 
 // no number equal of vocale si consoane like : east
 // no string with lowercase
@@ -310,3 +310,25 @@ console.log(i("Peace"));
 // console.log("ceva");
 
 // maybe use While loop or find other solution then 2 for !
+
+// function removeUrlAnchor(url) {
+//   let link = url.split("");
+//   let checkHash = link.findIndex((el) => el === "#");
+//   let result = [];
+//   let findHash = link.map((element, index, arr) => {
+//     if (checkHash === -1) {
+//       result.push(element);
+//     } else if (element === "#") {
+//       for (let i = 0; i < index; i++) {
+//         result.push(arr[i]);
+//       }
+//     }
+//   });
+//   return result.join("");
+// }
+
+function removeUrlAnchor(url) {
+  return url.split("#")[0];
+}
+
+console.log(removeUrlAnchor("www.codewars#.comabout"));
