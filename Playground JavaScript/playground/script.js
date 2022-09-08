@@ -327,8 +327,97 @@
 //   return result.join("");
 // }
 
-function removeUrlAnchor(url) {
-  return url.split("#")[0];
-}
+// function removeUrlAnchor(url) {
+//   return url.split("#")[0];
+// }
 
-console.log(removeUrlAnchor("www.codewars#.comabout"));
+// console.log(removeUrlAnchor("www.codewars#.comabout"));
+
+
+
+// function XO(str) {
+//   let arr = str.split("")
+//   let arrX = []
+//   let arrO = []
+  
+//   arr.map((element) => {
+//     if(element.toLowerCase() === "x") {
+//       arrX.push(element)
+//     }else if (element.toLowerCase() === "o"){
+//       arrO.push(element)
+//     }
+//   })
+  
+//   return arrX.length === arrO.length ? true : false
+  // if(arrX.length === arrO.length) {
+  //   return true
+  // } else return false
+
+  // console.log(result)
+// }
+
+
+
+// console.log(XO(''));
+// (XO("xxOo"),true);
+// (XO("xxxm"),false);
+// (XO("Oo"),false);
+// (XO("ooom"),false);
+
+
+// const orderedCount = function (text) {
+  
+//   let obj =[];
+//   for(let s of text)
+//   if(!obj[s])
+//   obj[s] = 1;
+//   else 
+//   obj[s] = obj[s]  + 1;
+//   return obj
+// }
+
+// console.log(orderedCount("abracadabra"))
+
+
+
+
+// The string
+// var str = "I want to count the number of occurrences of each char in this string";
+
+// // A map (in JavaScript, an object) for the character=>count mappings
+// var counts = {};
+
+// // Misc vars
+// var ch, index, len, count;
+
+// // Loop through the string...
+// for (index = 0, len = str.length; index < len; ++index) {
+//     // Get this character
+//     ch = str.charAt(index); // Not all engines support [] on strings
+
+//     // Get the count for it, if we have one; we'll get `undefined` if we
+//     // don't know this character yet
+//     count = counts[ch];
+
+//     // If we have one, store that count plus one; if not, store one
+//     // We can rely on `count` being falsey if we haven't seen it before,
+//     // because we never store falsey numbers in the `counts` object.
+//     counts[ch] = count ? count + 1 : 1;
+// }
+
+// for (ch in counts) {
+//   console.log(ch + " count: " + counts[ch]);
+// }
+
+// let s = 'hello';
+// var result = [...s].reduce((a, e) => { a[e] = a[e] ? a[e] + 1 : 1; return a }, []); 
+// console.log(result); // {h: 1, e: 1, l: 2, o: 1}
+
+// let str = "atul kumar srivastava";
+// let obj =[];
+// for(let s of str)if(!obj[s])obj[s] = 1;else obj[s] = obj[s]  + 1;
+// console.log(obj)
+
+
+
+
