@@ -441,18 +441,18 @@
 
 // console.log(map1.has('barr'));
 
-let zoo = new Map()
+// let zoo = new Map()
 
-zoo.set('Zebra', 5)
-zoo.set('Gorila', 2)
-zoo.set('Monkey', 76)
+// zoo.set('Zebra', 5)
+// zoo.set('Gorila', 2)
+// zoo.set('Monkey', 76)
 
 
-let zebraCount = zoo.get('Zebra')
+// let zebraCount = zoo.get('Zebra')
 
-for(let [key, value] of zoo){
-  console.log(`${key} : ${value}`)
-}
+// for(let [key, value] of zoo){
+//   console.log(`${key} : ${value}`)
+// }
 
 
 // console.log(zebraCount)

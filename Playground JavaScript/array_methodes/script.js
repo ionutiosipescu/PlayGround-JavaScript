@@ -207,51 +207,7 @@
 // .
 // .
 // .
-// ---> .SET <--- The set() method adds or updates an entry in a Map object with a specified key and a value.
-// const map1 = new Map();
-// map1.set('bar', 'foo');
 
-// console.log(map1.get('bar'));
-// expected output: "foo"
-
-// console.log(map1.get('baz'));
-// expected output: undefined
-// .
-// .
-// .
-// .
-// .
-// .
-// .
-// .
-// .
-// ---> .HAS <--- return boolean value if element with the specified key exists or not
-
-// const map1 = new Map();
-// map1.set('bar', 'foo');
-
-// console.log(map1.has('bar'));
-// expected output: true
-
-// console.log(map1.has('baz'));
-// .
-// .
-// .
-// .
-// .
-// .
-// .
-// .
-// .
-// ---> .GET <---
-// const map1 = new Map();
-// map1.set('bar', 'foo');
-
-// console.log(map1.get('bar'));
-// expected output: "foo"
-
-// console.log(map1.get('baz'));
-// expected output: undefined
 
 
 

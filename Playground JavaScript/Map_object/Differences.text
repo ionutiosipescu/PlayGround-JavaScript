@@ -1,0 +1,46 @@
+Differences betwen Object and Map() !!!
+
+VIdeos Documentation :
+
+https://www.youtube.com/watch?v=nValTHkLkf8
+
+https://www.youtube.com/watch?v=Z_2rpuPQmC0
+
+Every time when we need an object specific just for key = values we use Map() because Object is not build for that porpuse, he can do the job but much harder
+
+like :
+
+ let zoo = new Map()
+
+ zoo.set('Zebra', 5)
+ zoo.set('Gorila', 2)
+ zoo.set('Monkey', 76)
+
+
+ let zebraCount = zoo.get('Zebra')
+
+ for(let [key, value] of zoo){
+   console.log(`${key} : ${value}`)
+ }
+
+
+ console.log(zebraCount)
+
+OUTPUT:
+
+Zebra => 5
+Gorila => 5
+Monkey => 5
+
+
+So beside that situation we use Object
+
+! when iterate we need to make Map() -- in an array --> with Array(from mapobject ...)
+
+Metods we use with Map() :
+
+// ---> .SET <--- The set() method adds or updates an entry in a Map object with a specified key and a value.
+
+// ---> .HAS <--- return boolean value if element with the specified key exists or not
+
+// ---> .GET <---
