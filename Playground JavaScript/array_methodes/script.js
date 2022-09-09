@@ -9,7 +9,15 @@
 // ]
 
 // const itemsNumbers = [1, 2, 3, 4, 5]
-
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+// .
 //---> FILTER <--- 
 
 // const filterItems = items.filter((item) => {
@@ -37,8 +45,15 @@
 //         "price": 25
 //     }
 // ]
-
-
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+// .
 // ---> MAP <---
 
 //  const itemNames = items.map((item) => {
@@ -58,8 +73,15 @@
 //     "Computer",
 //     "Keyboard"
 // ]
-
-
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+// .
 // ---> FIND <---
 
 //  const foundItem = items.find((item) => {
@@ -74,8 +96,15 @@
 //     "name": "Book",
 //     "price": 5
 // }
-
-
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+// .
 // ---> FOREACH <---
 
 //  items.forEach((item) => {
@@ -91,9 +120,15 @@
 // Phone
 // Computer
 // Keyboard
-
-
-
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+// .
 // ---> SOME <---
 
 //  const hasInexpensiveItems = items.some((item) => {
@@ -105,9 +140,15 @@
 // ---Output---
 
 // true
-
-
-
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+// .
 // ---> Every <---
 
 //  const hasInexpensiveItems = items.every((item) => {
@@ -119,8 +160,15 @@
 // ---Output---
 
 // false
-
-
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+// .
 // ---> REDUCE <---
 
 //  const total = items.reduce((currentTotal, item) => {
@@ -132,9 +180,15 @@
 // ---Output---
 
 // 1840
-
-
-
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+// .
 // ---> INCLUDES <---
 
 //  const includesTwo = itemsNumbers.includes(2)
@@ -144,8 +198,66 @@
 // ---Output---
 
 // true
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+// ---> .SET <--- The set() method adds or updates an entry in a Map object with a specified key and a value.
+// const map1 = new Map();
+// map1.set('bar', 'foo');
+
+// console.log(map1.get('bar'));
+// expected output: "foo"
+
+// console.log(map1.get('baz'));
+// expected output: undefined
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+// ---> .HAS <--- return boolean value if element with the specified key exists or not
+
+// const map1 = new Map();
+// map1.set('bar', 'foo');
+
+// console.log(map1.has('bar'));
+// expected output: true
+
+// console.log(map1.has('baz'));
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+// ---> .GET <---
+// const map1 = new Map();
+// map1.set('bar', 'foo');
+
+// console.log(map1.get('bar'));
+// expected output: "foo"
+
+// console.log(map1.get('baz'));
+// expected output: undefined
 
 
+
+
+
+// expected output: false
 // ---> SLICE <---
 // ---> SPLICE <---
 // ---> CONCAT <---
@@ -154,3 +266,10 @@
 // ---> REST <---
 // ---> SPREAD OPERATOR <---
 // ---> PROMISES <---
+// ---> .HAS <---
+// ---> .SET <---
+// ---> .GET <---
+// ---> new Map() <---
+
+
+// Differences betwen Object and Map()

@@ -420,4 +420,39 @@
 
 
 
+// const map = new Map();
+// for (const k of s.split('')) {
+//   map.set(k, map.has(k) ? map.get(k) + 1 : 1);
+  /* // or
+  if (map.has(k)) {
+    map.set(k, map.get(k) + 1); // increment
+  } else {
+    map.set(k, 1);              // first one
+  }
+  */
+// }
 
+
+  // console.log(orderedCount("abracadabra"))
+
+
+//   const map1 = new Map();
+// map1.set('bar', 'foo');
+
+// console.log(map1.has('barr'));
+
+let zoo = new Map()
+
+zoo.set('Zebra', 5)
+zoo.set('Gorila', 2)
+zoo.set('Monkey', 76)
+
+
+let zebraCount = zoo.get('Zebra')
+
+for(let [key, value] of zoo){
+  console.log(`${key} : ${value}`)
+}
+
+
+// console.log(zebraCount)
