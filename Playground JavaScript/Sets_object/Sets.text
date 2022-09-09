@@ -1,0 +1,25 @@
+When to use Sets ?
+
+- when you have unique or you need unique data
+
+Ex if you try to add dublicates in a Sets object, he will not add them 
+
+const set = new Set(["a","b","c"])
+
+set.add("d")
+
+OUTPUT:
+console.log(set)
+{a,b,c,d}
+
+if we want arr :
+
+console.log(...set)
+
+[a,b,c,d]
+
+set.add("d")
+
+Set will not add again the "d" and the output will be again this:
+
+{a,b,c,d}
