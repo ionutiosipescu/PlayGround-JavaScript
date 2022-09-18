@@ -1,6 +1,7 @@
-Array
-Object
+Array()
+Date()
+Object()
 Map()
-WeakMap
-Sets
-WeakSet
+WeakMap()
+Sets()
+WeakSet()
