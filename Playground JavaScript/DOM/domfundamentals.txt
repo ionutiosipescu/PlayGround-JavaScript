@@ -1,0 +1,16 @@
+
+
+Get Elements from DOM
+
+console.log(document.querySelector('.message'));
+
+// OUTPUT
+
+        <p class="message">Start guessing...</p>
+
+console.log(document.querySelector('.message').textContent);
+
+
+// OUTPUT
+
+        Start guessing...
